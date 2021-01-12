@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    text-align: center;
+}
+
+header {
+    background-color: #eec200;
+    height: 6.5rem;
+    text-align: left;
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 5rem;
+}
+
+#logo {
+	position: relative;
+	top: 1.1rem;
+	left: 1.7rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#main-weather {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+}
+
+.teen {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.search-btn {
+	border: 0;
+	background-color: transparent;
+	position: relative;
+	left: 3rem;
+	cursor: pointer;
+	font-size: 1.8rem;
+    outline: none;
+}    
+
+.search {
+    padding: 1.3rem 1.3rem 1.3rem 3.8rem;
+    width: 50%;
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: #b4fd09;
+    font-family: 'Times New Roman', Times, serif;
+    outline: none;
+}
+
+input[type="submit"] {
+    position: absolute; 
+    left: -9999px; 
+    width: 1px; 
+    height: 1px;
+}
+
+.search:hover, .search:focus {
+  border: 1px solid #6200EE;
+  background-color: white;
+}
+
+.search::placeholder {
+    font-size: 1.9rem;
+}
+
+.condition > h1 {
+    font-size: 8rem;
+}
+
+.weather-info {
+	text-align: left;
+	font-size: 2rem;
+	padding-left: 3rem;
+	border-left: 3px solid black;
+	margin: 0 3rem;
+}
+
+.location {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    color: rgb(0, 255, 213);
+}
+
+.weather-info p {
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #484646;
+}
+
+.description span {
+    font-size: 3rem;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    #main-weather {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search {
+        width: 80%;
+    }
+
+    .weather-info {
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .weather-info {
+        padding: 0;
+        border: none;
+        margin: 0;
+        text-align: center;
+    }
+
+    .weather-info:before {
+        content: "";
+        position: relative;
+        left: 0;
+        top: 0;
+        height: 5px;
+        width: 70%;
+        border-top: .3rem solid #000;
+        display: inline-block;
+    }
+}

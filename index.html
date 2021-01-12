@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather App</title>
+
+    <script src="https://kit.fontawesome.com/e371241f19.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/wu-icons-style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Rubik&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <span id="logo">WEATHER APP</span>
+    </header>
+    <form action="#">
+        <section class="teen">
+            <button type="submit" class="search-btn fas fa-search">
+            </button>
+            <input class="search" name="city" type="text" id="city" placeholder="Enter city...">
+        </section>
+        <input type="submit" tabindex="-1"/>
+    </form>
+
+    <section id="main-weather">
+        <div class="condition">
+            <i class="wu wu-128 wu-black wu-day wu-sleet"></i>
+            <h1>50 &#176;C</h1>
+        </div>
+        <div class="weather-info">
+            <h2 class="location">NAIROBI, KENYA</h2>
+            <p class="description"><span>Clear weather</span></p>
+            <p class="feelsLike">Today's Look: <span>40 </span>&#148;C</p>
+            <p class="humidity">Humidity: <span>27</span>%</p>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
